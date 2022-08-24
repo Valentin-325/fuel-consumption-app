@@ -1,38 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  background: #084C61;
+  color: #FFC857;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.App .container {
+  width: 100%;
+  height: auto;
+  padding: 0 2rem;
+}
+.App .container .titleForm {
+  margin: 2rem 0;
+}
+.App .container form {
+  margin: 2rem 0;
+}
+.App .container form label {
+  font-size: 1.2rem;
+}
+.App .container form input[type=text] {
+  margin: 0.5rem 0;
+  height: 2.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 0.4rem;
+  padding-left: 0.3rem;
+  text-align: left;
+}
+.App .container form input[type=text]::-moz-placeholder {
+  font-size: 1.1rem;
+  color: black;
+}
+.App .container form input[type=text]:-ms-input-placeholder {
+  font-size: 1.1rem;
+  color: black;
+}
+.App .container form input[type=text]::placeholder {
+  font-size: 1.1rem;
+  color: black;
+}
+.App .container form button {
+  cursor: pointer;
+  background-color: white;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+.App .container .displayConsumption p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 628px) {
+  .container {
+    max-width: 60%;
+    background: #177e89;
+    border-radius: 1.2rem;
   }
 }
+@media (min-width: 992px) {
+  .container {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 40%;
+  }
+}/*# sourceMappingURL=App.css.map */
